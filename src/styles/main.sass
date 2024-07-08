@@ -1,0 +1,84 @@
+@use "./config/reset"
+@use "./config/colors"
+
+@use "./sections/hero"
+@use "./sections/fun"
+
+body
+    background-image: linear-gradient(to bottom, colors.$corDeFundo, colors.$corDeFundo2)
+    background-repeat: no-repeat
+    color: colors.$corDoTexto
+    overflow-x: hidden
+
+@mixin title($fontSize: 64px)
+    font-size: $fontSize
+    line-height: $fontSize + 10px
+
+@mixin subtitle($fontSize: 42px)
+    font-size: $fontSize
+    line-height: $fontSize + 10px
+
+@mixin text($fontSize: 20px)
+    font-size: $fontSize
+    line-height: $fontSize + 10px
+
+@mixin containerSizeAndPadding($padding: 10vh)
+    padding: $padding
+
+.title
+    @include title()
+    @media (max-width: 768px)
+        @include title(32px)
+
+.subtitle
+    @include subtitle()
+    @media (max-width: 768px)
+        @include subtitle(22px)
+
+.text
+    @include text()
+    @media (max-width: 768px)
+        @include text(18px)
+
+.container
+    @include containerSizeAndPadding()
+    @media (max-width: 768px)
+        @include containerSizeAndPadding(5vh)
+
+.button
+    padding: 16px
+    border: none
+    border-radius: 8px
+    background-color: colors.$corDeFundo
+    color: colors.$corDoTexto
+    font-weight: bold
+    cursor: pointer
+    @include text()
+
+    @media (max-width: 768px)
+        @include text(18px)
+
+.cat
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    overflow: hidden
+    background-color: rgba(0, 0, 0, 0.6)
+    align-items: center
+    justify-content: center
+
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 20px
+        border-radius: 8px
+        background-color: colors.$corDeFundo3
+        color: colors.$corDeFundo
+
+    img
+        width: 300px
+        border-radius: 8px

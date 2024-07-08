@@ -1,0 +1,44 @@
+@use "../config/colors"
+
+.hero
+
+    .title
+        text-align: center
+
+    &__img
+        display: block
+        margin: 0 auto
+        width: 300px
+        @media (max-width: 768px)
+            width: 200px
+
+    &__title
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding-bottom: 32px
+
+        @media (max-width: 768px)
+            text-align: center
+
+        .title
+            margin-bottom: 16px
+
+    &__infos
+        display: flex
+        justify-content: space-between
+        background-color: colors.$corDeFundo3
+        color: colors.$corDoTexto2
+        margin: 100px 10vw
+        padding: 32px
+        border-radius: 16px
+
+        @media (max-width: 768px)
+            flex-direction: column
+            margin: 50px 0
+            padding: 16px
+            text-align: center
+
+            div
+                margin-bottom: 16px

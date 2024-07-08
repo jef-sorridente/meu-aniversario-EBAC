@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu aniversário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles/main.sass" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cat">
+        <div class="cat__container">
+          <img
+            src="https://media.tenor.com/jq3TOO2LoS0AAAAM/cat-dance.gif"
+            alt="Agito do gato"
+          />
+          <h3 class="subtitle">Presença confirmada!</h3>
+        </div>
+      </div>
+
+      <header class="hero">
+        <img
+          class="hero__img"
+          src="images/bolo-de-aniversario.png"
+          alt="Bolo de aniversário"
+        />
+        <div class="hero__title">
+          <h1 class="title">
+            Parabéns você recebeu um convite para meu aniversário!
+          </h1>
+          <b class="subtitle"
+            >Evento começa em: <span id="counterTime"></span>
+          </b>
+        </div>
+        <div class="hero__infos">
+          <div>
+            <b class="text">Local:</b>
+            <p class="text">Minha casa</p>
+          </div>
+          <div>
+            <b class="text">Preço:</b>
+            <p class="text">0800 (free)</p>
+          </div>
+          <div>
+            <b class="text">Quando:</b>
+            <p class="text">15/15/2025</p>
+          </div>
+
+          <button class="button" id="button">Confirmar presença</button>
+        </div>
+      </header>
+      <section class="fun" data-aos="fade-right">
+        <div class="fun__content">
+          <h2 class="subtitle">Resenha</h2>
+          <p class="text">
+            Vamos trocar ideia sobre nossas paradas favoritas! Traga a resenha
+            daquele livro, filme ou série que você curtiu. Quem sabe a gente não
+            descobre um rolê novo?
+          </p>
+        </div>
+        <img src="images/bate-papo.png" alt="Bate papo" />
+      </section>
+      <section class="fun" data-aos="fade-left">
+        <div class="fun__content">
+          <h2 class="subtitle">Pizza</h2>
+          <p class="text">
+            A pizza vai ser a estrela da parada! Teremos os clássicos e uns
+            sabores diferentões. Chega com fome e bora se jogar nessa delícia.
+          </p>
+        </div>
+        <img src="images/pizza.png" alt="Pizza" />
+      </section>
+      <section class="fun" data-aos="fade-right">
+        <div class="fun__content">
+          <h2 class="subtitle">Cervejinha</h2>
+          <p class="text">
+            Pros maiores de idade, vai rolar uma seleção top de cervejas. Vamos
+            brindar à vida e aos rolês!
+          </p>
+        </div>
+        <img src="images/saude.png" alt="Cerveja" />
+      </section>
+      <section class="fun" data-aos="fade-left">
+        <div class="fun__content">
+          <h2 class="subtitle">Games</h2>
+          <p class="text">
+            Bora comemorar meu aniversário com uma maratona de jogos! Vai ter
+            console, PC e muita zoeira. Prepare-se para uns headshots épicos e
+            vitórias suadas.
+          </p>
+        </div>
+        <img src="images/video-game.png" alt="Games" />
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
