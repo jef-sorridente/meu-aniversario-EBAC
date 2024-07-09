@@ -27,8 +27,8 @@ body
 
 .title
     @include title()
-    @media (max-width: 768px)
-        @include title(32px)
+    @media screen and (max-width: 768px)
+        @include title(16px)
 
 .subtitle
     @include subtitle()
